@@ -7,14 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/Deque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/circle/CircleDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/circle/CircleQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/list/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/list/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_05_queue/list/List.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/BinarySearchTree.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Car.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Main.java" afterDir="false" />
@@ -27,11 +19,6 @@
       <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/Printer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stack/_02_GetMinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stackandqueue/_02_GetMinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stack/_03_StackAndQueueConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stackandqueue/_03_StackAndQueueConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stack/_20_ValidPparentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stackandqueue/_20_ValidPparentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stack/_232_TwoStackOneQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stackandqueue/_232_TwoStackOneQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,9 +35,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,20 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
-    <configuration name="Code_00_BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoExpress.sort.Code_00_BubbleSort" />
-      <module name="dataStructure&amp;Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoExpress.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Code_02_Hanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luoExpress.recursionAndDP.Code_02_Hanoi" />
       <module name="dataStructure&amp;Algorithm" />
@@ -173,6 +144,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luoExpress._05_queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoExpress._06_binarytree.Main" />
+      <module name="dataStructure&amp;Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoExpress._06_binarytree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,20 +238,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Code_00_BubbleSort" />
       <item itemvalue="Application.Code_02_Hanoi" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Tomcat Server.Tomcat8.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Code_02_Hanoi" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +329,7 @@
       <workItem from="1568858047305" duration="155000" />
       <workItem from="1568926934442" duration="6343000" />
       <workItem from="1569159585306" duration="5601000" />
-      <workItem from="1569197694560" duration="638000" />
+      <workItem from="1569197694560" duration="19099000" />
     </task>
     <task id="LOCAL-00001" summary="add some commits on insertSort">
       <created>1556829615889</created>
@@ -522,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568078053061</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="updated stack&amp;added queue">
+      <created>1569259802290</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1569259802291</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +556,8 @@
     <MESSAGE value="added windows" />
     <MESSAGE value="added window" />
     <MESSAGE value="added list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added list" />
+    <MESSAGE value="updated stack&amp;added queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated stack&amp;added queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
