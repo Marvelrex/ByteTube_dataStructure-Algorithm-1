@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="" />
+    <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/file/Files.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/printer/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +330,6 @@
       <workItem from="1568926934442" duration="6343000" />
       <workItem from="1569159585306" duration="5601000" />
       <workItem from="1569197694560" duration="19099000" />
-      <workItem from="1569424853677" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="add some commits on insertSort">
       <created>1556829615889</created>
@@ -501,14 +513,7 @@
       <option name="project" value="LOCAL" />
       <updated>1569259802291</updated>
     </task>
-    <task id="LOCAL-00027" summary="added binary search tree">
-      <created>1569424887894</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1569424887894</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,8 +557,7 @@
     <MESSAGE value="added window" />
     <MESSAGE value="added list" />
     <MESSAGE value="updated stack&amp;added queue" />
-    <MESSAGE value="added binary search tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="added binary search tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated stack&amp;added queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

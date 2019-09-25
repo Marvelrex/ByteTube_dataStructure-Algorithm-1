@@ -179,7 +179,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 //	/**
 //	 * 层序遍历
 //	 */
-	public void levelOrderTraversal() { 
+	public void levelOrderTraversal() {
 		if (root == null) return;
 
 		Queue<Node<E>> queue = new LinkedList<>();
