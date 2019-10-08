@@ -89,7 +89,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 			// 用后继节点的值覆盖度为2的节点的值
 			node.element = s.element;
 			// 删除后继节点
-			node = s;
+			node = s;//把s赋值给node，后面删除node，相当于删除s
 		}
 		
 		// 删除node节点（node的度必然是1或者0）
@@ -117,7 +117,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		}
 	}
 	
-	private Node<E> node(E element) {
+	private Node<E>  node(E element) {
 		Node<E> node = root;
 		while (node != null) {
 			int cmp = compare(element, node.element);
@@ -179,18 +179,19 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 //	/**
 //	 * 层序遍历
 //	 */
-	public void levelOrderTraversal() { 
+	public void levelOrderTraversal() {
 		if (root == null) return;
 
 		Queue<Node<E>> queue = new LinkedList<>();
-		queue.offer(root);
+		queue.offer(root);//enqueue
 
 		while (!queue.isEmpty()) {
-			Node<E> node = queue.poll();
+			Node<E> node = queue.poll();//dequeue
 			System.out.println(node.element);
 
 			if (node.left != null) {
 				queue.offer(node.left);
+
 			}
 
 			if (node.right != null) {
@@ -266,22 +267,31 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		Queue<Node<E>> queue = new LinkedList<>();
 		queue.offer(root);
 
-		boolean leaf = false;
+		boolean leaf = false;//开启叶节点模式标识
 		while (!queue.isEmpty()) {
 			Node<E> node = queue.poll();
-			if (leaf && !node.isLeaf()) return false;
-			
-			if (node.left != null) {
+			if (leaf && !node.isLeaf()) return false;//3，4
+
+			if (node.hasTwoChildren()) {//1
 				queue.offer(node.left);
-			} else if (node.right != null) { // node.left == null && node.right != null
-				return false;
+				queue.offer(node.right);
+			}else if(node.left== null && node.right!=null){//2
+				return  false;
+			}else {
+				leaf = true;//开启叶节点模式
 			}
 			
-			if (node.right != null) {
-				queue.offer(node.right);
-			} else { // node.right == null
-				leaf = true;
-			}
+//			if (node.left != null) {
+//				queue.offer(node.left);
+//			} else if (node.right != null) { // node.left == null && node.right != null
+//				return false;
+//			}
+//
+//			if (node.right != null) {
+//				queue.offer(node.right);
+//			} else { // node.right == null
+//				leaf = true;
+//			}
 		}
 		
 		return true;
@@ -314,7 +324,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 //		return true;
 //	}
 	
-	public int height() {
+	public int height() {//层序遍历
 		if (root == null) return 0;
 		
 		// 树的高度
@@ -351,7 +361,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 	
 	private int height(Node<E> node) {
 		if (node == null) return 0;
-		return 1 + Math.max(height(node.left), height(node.right));
+		return 1 + Math.max(height(node.left), height(node.right));//一个节点的高度等于该节点的高度+子树de高度
 	}
 	
 	@Override
@@ -361,7 +371,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		return sb.toString();
 	}
 	
-	private void toString(Node<E> node, StringBuilder sb, String prefix) {
+	private void toString(Node<E> node, StringBuilder sb, String prefix) {//中序打印
 		if (node == null) return;
 
 		toString(node.left, sb, prefix + "L---");

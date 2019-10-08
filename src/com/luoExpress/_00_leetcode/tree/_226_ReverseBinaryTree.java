@@ -4,13 +4,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * https://leetcode-cn.com/problems/invert-binary-tree/
+ * https://leetcode.com/problems/invert-binary-tree/
  * @author Dal
  *
  */
-public class _226_ReverseBinaryTree {
+public class _226_ReverseBinaryTree {//将所有节点的左右子树都交换
 	
-//   public TreeNode invertTree(TreeNode root) {
+//   public TreeNode invertTree(TreeNode root) {preorder 在递归调用中，root就是每次递归调用中的新的当前节点
 //	   if (root == null) return root;
 //	   
 //	   TreeNode tmp = root.left;
@@ -23,7 +23,7 @@ public class _226_ReverseBinaryTree {
 //       return root;
 //   }
 	
-//	public TreeNode invertTree(TreeNode root) {
+//	public TreeNode invertTree(TreeNode root) {//postorder
 //	   if (root == null) return root;
 //	   
 //       invertTree(root.left);
@@ -36,7 +36,7 @@ public class _226_ReverseBinaryTree {
 //       return root;
 //    }
 	
-//	public TreeNode invertTree(TreeNode root) {
+//	public TreeNode invertTree(TreeNode root) {//inorder  在递归调用中，root就是每次递归调用中的新的当前节点
 //	   if (root == null) return root;
 //	   
 //       invertTree(root.left);
@@ -45,7 +45,7 @@ public class _226_ReverseBinaryTree {
 //	   root.left = root.right;
 //	   root.right = tmp;
 //
-//       invertTree(root.left);
+//       invertTree(root.left);//这里的left相当于是没有交换前的right
 //       
 //       return root;
 //    }

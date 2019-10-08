@@ -60,9 +60,8 @@ public class Code_01_PreInPosTraversal {
 		System.out.println();
 	}
 
-	public static boolean inOrderUnRecur(Node head) {
+	public static void inOrderUnRecur(Node head) {
 		System.out.print("in-order: ");
-		int pre = Integer.MIN_VALUE;
 		if (head != null) {
 			Stack<Node> stack = new Stack<Node>();
 			while (!stack.isEmpty() || head != null) {
@@ -71,18 +70,13 @@ public class Code_01_PreInPosTraversal {
 					head = head.left;
 				} else {
 					head = stack.pop();
-					//System.out.print(head.value + " ");
-					if(pre<head.value){
-						pre = head.value;
+					System.out.print(head.value + " ");
 
-					}
 					head = head.right;
 				}
 			}
 		}
 		System.out.println();
-
-		return false;
 	}
 
 	public static void posOrderUnRecur1(Node head) {

@@ -1,7 +1,7 @@
 package com.luoExpress._00_leetcode.list;
 
 /**
- * https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
+ * https://leetcode.com/problems/delete-node-in-a-linked-list/
  * @author Dal
  *
  */

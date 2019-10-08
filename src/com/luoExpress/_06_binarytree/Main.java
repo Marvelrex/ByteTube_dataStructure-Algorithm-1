@@ -46,11 +46,7 @@ public class Main {
 		
 		BinaryTrees.println(bst1);
 		
-		BinarySearchTree<Person> bst2 = new BinarySearchTree<>(new Comparator<Person>() {
-			public int compare(Person o1, Person o2) {
-				return o2.getAge() - o1.getAge();
-			}
-		});
+		BinarySearchTree<Person> bst2 = new BinarySearchTree<>(new PersonComparator2());
 		for (int i = 0; i < data.length; i++) {
 			bst2.add(new Person(data[i]));
 		}
@@ -252,6 +248,6 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		test1();
+		test2();
 	}
 }
