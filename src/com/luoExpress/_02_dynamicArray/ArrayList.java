@@ -15,6 +15,8 @@ public class ArrayList<E> {
     private static final int DEFAULT_CAPACITY = 10;
     private static final int ELEMENT_NOT_FOUND = -1;
 
+
+
     public ArrayList(int capaticy) {
         capaticy = (capaticy < DEFAULT_CAPACITY) ? DEFAULT_CAPACITY : capaticy;
         elements = (E[]) new Object[capaticy];
@@ -28,9 +30,9 @@ public class ArrayList<E> {
      * 清除所有元素
      */
     public void clear() {
-        for (int i = 0; i < size; i++) {
-            elements[i] = null;
-        }
+//        for (int i = 0; i < size; i++) {
+//            elements[i] = null;
+//        }
         size = 0;
     }
 
@@ -167,9 +169,9 @@ public class ArrayList<E> {
         for (int i = 0; i < size; i++) {
             newElements[i] = elements[i];
         }
-        elements = newElements;
+        elements = newElements;//两个数组之间的赋值
 
-        System.out.println(oldCapacity + "扩容为" + newCapacity);
+        //System.out.println(oldCapacity + "扩容为" + newCapacity);
     }
 
     private void outOfBounds(int index) {

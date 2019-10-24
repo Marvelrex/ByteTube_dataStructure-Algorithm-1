@@ -6,32 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="nothing changed">
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/file/Files.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/printer/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/tree/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Master.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/systemDesign/Reciever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/systemDesign/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/systemDesign/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/systemDesign/User.java" afterDir="false" />
+    <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/file/Files.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/printer/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/tree/AVLTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/tree/BBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/tree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree/tree/RBTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/list/_237_deleteListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/list/_237_deleteListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/tree/_226_ReverseBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/tree/_226_ReverseBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_02_dynamicArray/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_02_dynamicArray/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/listandTree/Code_01_PreInPosTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/listandTree/Code_01_PreInPosTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/tree/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree/tree/AVLTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557151727779" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -82,15 +74,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/manacher" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/luoExpress/_07_AVLTree" />
+      <recent name="$PROJECT_DIR$/src/com/luoExpress/_08_RBTree" />
       <recent name="$PROJECT_DIR$/src/com/luoExpress/_06_binarytree" />
       <recent name="$PROJECT_DIR$/src/com/luoExpress/_05_queue" />
       <recent name="$PROJECT_DIR$/src/com/luoExpress" />
       <recent name="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/stack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/manacher" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -111,7 +103,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Code_02_Hanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoExpress.recursionAndDP.Code_02_Hanoi" />
+      <module name="dataStructure&amp;Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoExpress.recursionAndDP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoExpress._04_stack.Main" />
+      <module name="dataStructure&amp;Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoExpress._04_stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luoExpress._03_list.Main" />
       <module name="dataStructure&amp;Algorithm" />
@@ -144,32 +162,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luoExpress._06_binarytree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoExpress.systemDesign.Test" />
-      <module name="dataStructure&amp;Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoExpress.systemDesign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoExpress.demo.Test" />
-      <module name="dataStructure&amp;Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoExpress.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,20 +243,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Code_02_Hanoi" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Tomcat Server.Tomcat8.5" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -343,12 +335,14 @@
       <workItem from="1568926934442" duration="6343000" />
       <workItem from="1569159585306" duration="5601000" />
       <workItem from="1569197694560" duration="19099000" />
-      <workItem from="1569424853677" duration="1662000" />
-      <workItem from="1569619097043" duration="4392000" />
-      <workItem from="1569687812161" duration="92000" />
-      <workItem from="1569766939359" duration="23798000" />
-      <workItem from="1570034826557" duration="1511000" />
-      <workItem from="1570328323807" duration="23005000" />
+      <workItem from="1569424853677" duration="597000" />
+      <workItem from="1570934206242" duration="4773000" />
+      <workItem from="1571007763135" duration="821000" />
+      <workItem from="1571010352752" duration="1388000" />
+      <workItem from="1571012160638" duration="183000" />
+      <workItem from="1571068766501" duration="2776000" />
+      <workItem from="1571239964530" duration="6508000" />
+      <workItem from="1571933584716" duration="2226000" />
     </task>
     <task id="LOCAL-00001" summary="add some commits on insertSort">
       <created>1556829615889</created>
@@ -539,14 +533,7 @@
       <option name="project" value="LOCAL" />
       <updated>1569424887894</updated>
     </task>
-    <task id="LOCAL-00028" summary="nothing changed">
-      <created>1569430201713</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1569430201713</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,6 +556,7 @@
     <MESSAGE value="add some commits on insertSort" />
     <MESSAGE value="modify" />
     <MESSAGE value="modify comment on merge sort and add recursion" />
+    <MESSAGE value="nothing changed" />
     <MESSAGE value="add new code" />
     <MESSAGE value="refactor package name" />
     <MESSAGE value="add comments" />
@@ -590,8 +578,7 @@
     <MESSAGE value="added list" />
     <MESSAGE value="updated stack&amp;added queue" />
     <MESSAGE value="added binary search tree" />
-    <MESSAGE value="nothing changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added binary search tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
