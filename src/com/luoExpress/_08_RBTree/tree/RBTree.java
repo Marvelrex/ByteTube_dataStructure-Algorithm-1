@@ -30,12 +30,12 @@ public class RBTree<E> extends BBST<E> {
 		// 叔父节点
 		Node<E> uncle = parent.sibling();
 		// 祖父节点
-		Node<E> grand = red(parent.parent);
+		Node<E> grand = parent.parent;
 		if (isRed(uncle)) { // 叔父节点是红色【B树节点上溢】
 			black(parent);
 			black(uncle);
 			// 把祖父节点当做是新添加的节点
-			afterAdd(grand);
+			afterAdd(red(grand));
 			return;
 		}
 		
@@ -77,6 +77,7 @@ public class RBTree<E> extends BBST<E> {
 		// 删除的是黑色叶子节点【下溢】
 		// 判断被删除的node是左还是右
 		boolean left = parent.left == null || node.isLeftChild();
+		//Node<E> sibling = node.sibling(); bug！！！ 不可以这样写的原因是afterRemove是在remove发生之后的，node已经被remove掉所以node.sibling()的结果是null
 		Node<E> sibling = left ? parent.right : parent.left;
 		if (left) { // 被删除的节点在左边，兄弟节点在右边
 			if (isRed(sibling)) { // 兄弟节点是红色
@@ -116,7 +117,6 @@ public class RBTree<E> extends BBST<E> {
 				// 更换兄弟
 				sibling = parent.left;
 			}
-			
 			// 兄弟节点必然是黑色
 			if (isBlack(sibling.left) && isBlack(sibling.right)) {
 				// 兄弟节点没有1个红色子节点，父节点要向下跟兄弟节点合并

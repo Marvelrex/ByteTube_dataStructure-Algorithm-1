@@ -51,29 +51,31 @@ public class Main {
 	}
 	
 	static void test2() {
-		FileInfo fileInfo = Files.read("C:\\Users\\luoExpress._09_Set Dal\\Desktop\\src\\java\\util",
+		FileInfo fileInfo = Files.read("/Users/dalluo/Desktop/src/java/util",
 				new String[]{"java"});
-		
+
 		System.out.println("文件数量：" + fileInfo.getFiles());
 		System.out.println("代码行数：" + fileInfo.getLines());
 		String[] words = fileInfo.words();
 		System.out.println("单词数量：" + words.length);
-		
-//		Times.test("ListSet", new Task() {
-//			public void execute() {
-//				testSet(new ListSet<>(), words);
-//			}
-//		});
-		
+
+		Times.test("ListSet", new Task() {
+			public void execute() {
+				testSet(new ListSet<>(), words);
+			}
+		});
+
 		Times.test("TreeSet", new Task() {
 			public void execute() {
 				testSet(new TreeSet<>(), words);
 			}
 		});
+
+
 	}
 
 	public static void main(String[] args) {
-		test1();
+		test2();
 	}
 
 }

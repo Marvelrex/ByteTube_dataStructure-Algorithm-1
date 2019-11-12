@@ -28,6 +28,11 @@ public class ListSet<E> implements Set<E> {
 
 	@Override
 	public void add(E element) {
+//		if(list.contains(element)){
+//			int index = list.indexOf(element);
+//			list.set(index, element);
+//		}
+//		list.add(element);
 		int index = list.indexOf(element);
 		if (index != List.ELEMENT_NOT_FOUND) { // 存在就覆盖
 			list.set(index, element);
@@ -38,6 +43,12 @@ public class ListSet<E> implements Set<E> {
 
 	@Override
 	public void remove(E element) {
+//		if (list.contains(element)) {
+//			int index = list.indexOf(element);
+//			list.remove(index);
+//		}
+
+
 		int index = list.indexOf(element);
 		if (index != List.ELEMENT_NOT_FOUND) {
 			list.remove(index);
