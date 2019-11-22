@@ -59,11 +59,11 @@ public class Main {
 		String[] words = fileInfo.words();
 		System.out.println("单词数量：" + words.length);
 
-		Times.test("ListSet", new Task() {
-			public void execute() {
-				testSet(new ListSet<>(), words);
-			}
-		});
+//		Times.test("ListSet", new Task() {
+//			public void execute() {
+//				testSet(new ListSet<>(), words);
+//			}
+//		});
 
 		Times.test("TreeSet", new Task() {
 			public void execute() {

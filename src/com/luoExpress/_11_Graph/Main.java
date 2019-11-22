@@ -27,8 +27,10 @@ public class Main {
 	};
 
 	public static void main(String[] args) {
-		test();
+		//test();
 		//testMultiSp();
+		//testDfs();
+		testBfs();
 	}
 	
 	static void testMultiSp() {
@@ -66,18 +68,26 @@ public class Main {
 	}
 	
 	static void testDfs() {
-		Graph<Object, Double> graph = directedGraph(Data.DFS_02);
+		ListGraph<Object, Double> graph = (ListGraph<Object, Double>) directedGraph(Data.DFS_02);
+		//Graph<Object, Double> graph = directedGraph(Data.DFS_02);
 		graph.dfs("a", (Object v) -> {
 			System.out.println(v);
 			return false;
 		});
+
+		System.out.print("-----------------");
+		System.out.println();
+		graph.dfs2("a");
 	}
 	
 	static void testBfs() {
-		Graph<Object, Double> graph = directedGraph(Data.BFS_02);
-		graph.bfs(0, (Object v) -> {
-			System.out.println(v);
-			return false;
+		Graph<Object, Double> graph = undirectedGraph(Data.BFS_01);
+		graph.bfs("A", new Graph.VertexVisitor<Object>() {
+			@Override
+			public boolean visit(Object o) {
+				System.out.println(o);
+				return o.equals("F");
+			}
 		});
 	}
 	

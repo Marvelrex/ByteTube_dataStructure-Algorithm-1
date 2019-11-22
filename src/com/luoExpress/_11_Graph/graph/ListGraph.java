@@ -169,12 +169,13 @@ public class ListGraph<V, E> extends Graph<V, E> {
 	public void removeVertex(V v) {
 		Vertex<V, E> vertex = vertices.remove(v);
 		if (vertex == null) return;
-
+		//java中如果想一边遍历一边删除需要使用迭代器
 		for (Iterator<Edge<V, E>> iterator = vertex.outEdges.iterator(); iterator.hasNext();) {
 			Edge<V, E> edge = iterator.next();
 			edge.to.inEdges.remove(edge);
+			//vertex.outEdges.remove(edge);error!!!不可以这么写，一边遍历一边删除 是不允许的，多线程危险操作
 			// 将当前遍历到的元素edge从集合vertex.outEdges中删掉
-			iterator.remove(); 
+			iterator.remove();
 			edges.remove(edge);
 		}
 
@@ -188,20 +189,23 @@ public class ListGraph<V, E> extends Graph<V, E> {
 	}
 
 	@Override
+	//类似二叉树层序遍历
 	public void bfs(V begin, VertexVisitor<V> visitor) {
 		if (visitor == null) return;
 		Vertex<V, E> beginVertex = vertices.get(begin);
 		if (beginVertex == null) return;
 		
-		Set<Vertex<V, E>> visitedVertices = new HashSet<>();
-		Queue<Vertex<V, E>> queue = new LinkedList<>();
+		Set<Vertex<V, E>> visitedVertices = new HashSet<>();//记录已经被遍历过的点
+		Queue<Vertex<V, E>> queue = new LinkedList<>();//LinkedList是一个非常干净的双端连表
 		queue.offer(beginVertex);
 		visitedVertices.add(beginVertex);
-		
+
 		while (!queue.isEmpty()) {
 			Vertex<V, E> vertex = queue.poll();
+
+			//System.out.println(vertex.value);
 			if (visitor.visit(vertex.value)) return;
-			
+			//根据outedges找后续的顶点
 			for (Edge<V, E> edge : vertex.outEdges) {
 				if (visitedVertices.contains(edge.to)) continue;
 				queue.offer(edge.to);
@@ -210,6 +214,16 @@ public class ListGraph<V, E> extends Graph<V, E> {
 		}
 	}
 
+	/**
+	 * 1.先打印根节点（判断是否已经被访问过），然后从outEdges中选择一条边
+	 * 2.将被选择边的from、to按顺序入栈
+	 * 3.打印被选择边的to
+	 * 4.将to加到已经访问的范围中
+	 * 5.break（不去访问outEdges中的其他边，而且访问一条边上的剩余点）
+	 * 6.弹出栈顶元素
+	 * @param begin
+	 * @param visitor
+	 */
 	@Override
 	public void dfs(V begin, VertexVisitor<V> visitor) {
 		if (visitor == null) return;
@@ -222,6 +236,7 @@ public class ListGraph<V, E> extends Graph<V, E> {
 		// 先访问起点
 		stack.push(beginVertex);
 		visitedVertices.add(beginVertex);
+		//System.out.println(beginVertex.value);
 		if (visitor.visit(begin)) return;
 		
 		while (!stack.isEmpty()) {
@@ -233,10 +248,28 @@ public class ListGraph<V, E> extends Graph<V, E> {
 				stack.push(edge.from);
 				stack.push(edge.to);
 				visitedVertices.add(edge.to);
+				//System.out.println(edge.to.value);
 				if (visitor.visit(edge.to.value)) return;
 				
 				break;
 			}
+		}
+	}
+
+	public void dfs2(V begin) {
+		Vertex<V, E> beginVertex = vertices.get(begin);
+		if (beginVertex == null) return;
+		Set<Vertex<V,E>> visitedVertices = new HashSet<>();
+		dfs2(beginVertex, visitedVertices);
+	}
+
+	private void dfs2(Vertex<V, E> vertex, Set<Vertex<V, E>> visitedVertices) {
+		System.out.println(vertex.value);
+		visitedVertices.add(vertex);
+
+		for (Edge<V, E> edge : vertex.outEdges) {
+			if (visitedVertices.contains(edge.to)) continue;
+			dfs2(edge.to, visitedVertices);
 		}
 	}
 
@@ -597,19 +630,5 @@ public class ListGraph<V, E> extends Graph<V, E> {
 //		}
 //	}
 	
-//	public void dfs2(V begin) {
-//		Vertex<V, E> beginVertex = vertices.get(begin);
-//		if (beginVertex == null) return;
-//		dfs2(beginVertex, new HashSet<>());
-//	}
-//	
-//	private void dfs2(Vertex<V, E> vertex, Set<Vertex<V, E>> visitedVertices) {
-//		System.out.println(vertex.value);
-//		visitedVertices.add(vertex);
-//
-//		for (Edge<V, E> edge : vertex.outEdges) {
-//			if (visitedVertices.contains(edge.to)) continue;
-//			dfs2(edge.to, visitedVertices);
-//		}
-//	}
+
 }
