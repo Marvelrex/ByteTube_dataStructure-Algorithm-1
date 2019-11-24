@@ -54,7 +54,7 @@ public class SingleLinkedList<E> extends AbstractList<E> {
 		rangeCheckForAdd(index);
 		
 		if (index == 0) {
-			first = new Node<>(element, first);
+			first = new Node<>(element, first);//
 		} else {
 				Node<E> prev = node(index - 1);
 				prev.next = new Node<>(element, prev.next);
@@ -85,6 +85,7 @@ public class SingleLinkedList<E> extends AbstractList<E> {
 
 	@Override
 	public int indexOf(E element) {
+
 		if (element == null) {
 			Node<E> node = first;
 			for (int i = 0; i < size; i++) {

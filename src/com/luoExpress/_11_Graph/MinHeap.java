@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 /**
  * 二叉堆（最小堆）
- * @author MJ Lee
+ * @author Dal
  *
  * @param <E>
  */

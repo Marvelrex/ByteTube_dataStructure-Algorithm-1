@@ -1,10 +1,11 @@
 package com.luoExpress._03_list;
 
 public abstract class AbstractList<E> implements List<E>  {
+	//static final int ELEMENT_NOT_FOUND = -1;
 	/**
 	 * Number of elements
 	 */
-	protected int size;
+	protected int size;//protected --->subclass
 
 	/**
 	 * Number of elements

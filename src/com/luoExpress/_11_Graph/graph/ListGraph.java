@@ -315,9 +315,11 @@ public class ListGraph<V, E> extends Graph<V, E> {
 		Iterator<Vertex<V, E>> it = vertices.values().iterator();
 		if (!it.hasNext()) return null;
 		Vertex<V, E> vertex = it.next();
+		//封装最小生成树
 		Set<EdgeInfo<V, E>> edgeInfos = new HashSet<>();
 		Set<Vertex<V, E>> addedVertices = new HashSet<>();
 		addedVertices.add(vertex);
+		//封装每次切割中横切边装到小根堆中
 		MinHeap<Edge<V, E>> heap = new MinHeap<>(vertex.outEdges, edgeComparator);
 		int verticesSize = vertices.size();
 		while (!heap.isEmpty() && addedVertices.size() < verticesSize) {

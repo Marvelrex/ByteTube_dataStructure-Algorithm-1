@@ -7,6 +7,7 @@ public interface List<E> {
 	 */
 	void clear();
 
+
 	/**
 	 * 元素的数量
 	 * @return

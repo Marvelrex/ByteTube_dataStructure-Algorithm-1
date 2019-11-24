@@ -7,13 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Demo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/GetMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Quiz1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_01_timeComplexity/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_01_timeComplexity/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_01_timeComplexity/Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_01_timeComplexity/Times.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/AbstractList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_09_Set/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_09_Set/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/MinHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/graph/ListGraph.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,9 +32,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -349,7 +347,9 @@
       <workItem from="1573685744529" duration="19544000" />
       <workItem from="1574276540926" duration="4459000" />
       <workItem from="1574297954416" duration="4880000" />
-      <workItem from="1574456119539" duration="327000" />
+      <workItem from="1574456119539" duration="10320000" />
+      <workItem from="1574560062345" duration="1963000" />
+      <workItem from="1574615483538" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="add some commits on insertSort">
       <created>1556829615889</created>
@@ -561,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573589928098</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added comments on list and graph">
+      <created>1574456484456</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1574456484456</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="nothing changed" />
     <MESSAGE value="add new code" />
     <MESSAGE value="refactor package name" />
     <MESSAGE value="add comments" />
@@ -606,7 +612,8 @@
     <MESSAGE value="added RBTree" />
     <MESSAGE value="modify rbtree" />
     <MESSAGE value="added map and graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="added map and graph" />
+    <MESSAGE value="added comments on list and graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments on list and graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
