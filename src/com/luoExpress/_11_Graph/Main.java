@@ -30,7 +30,8 @@ public class Main {
 		//test();
 		//testMultiSp();
 		//testDfs();
-		testBfs();
+		//testBfs();
+		testMst();
 	}
 	
 	static void testMultiSp() {
@@ -54,7 +55,7 @@ public class Main {
 	}
 	
 	static void testMst() {
-		Graph<Object, Double> graph = undirectedGraph(Data.MST_01);
+		Graph<Object, Double> graph = undirectedGraph(Data.MST_02);
 		Set<EdgeInfo<Object, Double>> infos = graph.mst();
 		for (EdgeInfo<Object, Double> info : infos) {
 			System.out.println(info);

@@ -7,14 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77512122-9c8a-4fc1-95c9-bf9194690edf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Demo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/GetMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/Quiz1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luoExpress/demo/LinkedListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/AbstractList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/list/_237_deleteListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_00_leetcode/list/_237_deleteListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_03_list/single/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/MinHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luoExpress/_11_Graph/graph/ListGraph.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luoExpress.demo.Fib" />
       <module name="dataStructure&amp;Algorithm" />
@@ -122,6 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoExpress._03_list.Main" />
+      <module name="dataStructure&amp;Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoExpress._03_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.luoExpress._09_Set.Main" />
       <module name="dataStructure&amp;Algorithm" />
@@ -141,19 +153,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luoExpress._11_Graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoExpress._06_binarytree.Main" />
-      <module name="dataStructure&amp;Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoExpress._06_binarytree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,20 +234,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (5)" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Fib" />
+      <item itemvalue="Application.Main (2)" />
       <item itemvalue="Tomcat Server.Tomcat8.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Fib" />
-        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +348,10 @@
       <workItem from="1574297954416" duration="4880000" />
       <workItem from="1574456119539" duration="10320000" />
       <workItem from="1574560062345" duration="1963000" />
-      <workItem from="1574615483538" duration="2373000" />
+      <workItem from="1574615483538" duration="18977000" />
+      <workItem from="1574887358863" duration="10046000" />
+      <workItem from="1575126426246" duration="8053000" />
+      <workItem from="1575160472695" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="add some commits on insertSort">
       <created>1556829615889</created>
@@ -568,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574456484456</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added comments on graph">
+      <created>1574621604221</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1574621604221</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new code" />
     <MESSAGE value="refactor package name" />
     <MESSAGE value="add comments" />
     <MESSAGE value="add tree" />
@@ -613,7 +621,8 @@
     <MESSAGE value="modify rbtree" />
     <MESSAGE value="added map and graph" />
     <MESSAGE value="added comments on list and graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments on list and graph" />
+    <MESSAGE value="added comments on graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments on graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -622,6 +631,11 @@
           <url>file://$PROJECT_DIR$/src/com/luoExpress/sort/Code_04_QuickSort.java</url>
           <line>122</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/luoExpress/_03_list/Main.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -46,7 +46,20 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		josephus();
+		//josephus();
+		LinkedList<Integer> linkedList = new LinkedList<>();
+		linkedList.add(0,10);
+		linkedList.add(1,11);
+		linkedList.add(2,12);
+		linkedList.add(3,13);
+		linkedList.add(4,14);
+		linkedList.add(15);
+		System.out.println(linkedList);
+		linkedList.remove(0);
+		System.out.println(linkedList);
+
+
+
 		
 //		testList(new ArrayList<>());
 //		testList(new LinkedList<>());

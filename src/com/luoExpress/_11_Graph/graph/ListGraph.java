@@ -32,6 +32,7 @@ public class ListGraph<V, E> extends Graph<V, E> {
 		Set<Edge<V, E>> inEdges = new HashSet<>();
 		Set<Edge<V, E>> outEdges = new HashSet<>();
 		Vertex(V value) {
+
 			this.value = value;
 		}
 		@Override
@@ -308,46 +309,56 @@ public class ListGraph<V, E> extends Graph<V, E> {
 
 	@Override
 	public Set<EdgeInfo<V, E>> mst() {
-		return Math.random() > 0.5 ? prim() : kruskal();
+		return kruskal();
+		//return Math.random() > 0.5 ? prim() : kruskal();
 	}
 	
 	private Set<EdgeInfo<V, E>> prim() {
-		Iterator<Vertex<V, E>> it = vertices.values().iterator();
-		if (!it.hasNext()) return null;
-		Vertex<V, E> vertex = it.next();
-		//封装最小生成树
-		Set<EdgeInfo<V, E>> edgeInfos = new HashSet<>();
-		Set<Vertex<V, E>> addedVertices = new HashSet<>();
-		addedVertices.add(vertex);
-		//封装每次切割中横切边装到小根堆中
-		MinHeap<Edge<V, E>> heap = new MinHeap<>(vertex.outEdges, edgeComparator);
-		int verticesSize = vertices.size();
-		while (!heap.isEmpty() && addedVertices.size() < verticesSize) {
-			Edge<V, E> edge = heap.remove();
-			if (addedVertices.contains(edge.to)) continue;
-			edgeInfos.add(edge.info());
-			addedVertices.add(edge.to);
-			heap.addAll(edge.to.outEdges);
+		
+		//记录已经在mst中点
+		Set<Vertex<V,E>> addedVertices = new HashSet<>();
+		//记录最小生成树的边信息的
+		Set<EdgeInfo<V, E>> edgInfos = new HashSet<>();
+		Iterator<Vertex<V, E>> iterator = vertices.values().iterator();//java中每个容器java都封装le一个迭代器
+		if (!iterator.hasNext()) return null;
+		Vertex<V, E> vertex = iterator.next();//A
+		addedVertices.add(vertex);//A
+		MinHeap<Edge<V,E>> heap = new MinHeap<>(vertex.outEdges,edgeComparator);
+		while (!heap.isEmpty()&& addedVertices.size()<vertices.size()){
+			Edge<V, E> removed = heap.remove();
+			if (addedVertices.contains(removed.to)) continue;
+			edgInfos.add(removed.info());
+			addedVertices.add(removed.to);//B
+			heap.addAll(removed.to.outEdges);
 		}
-		return edgeInfos;
+
+		return edgInfos;
 	}
 	
 	private Set<EdgeInfo<V, E>> kruskal() {
-		int edgeSize = vertices.size() - 1;
-		if (edgeSize == -1) return null;
-		Set<EdgeInfo<V, E>> edgeInfos = new HashSet<>();
-		MinHeap<Edge<V, E>> heap = new MinHeap<>(edges, edgeComparator);
-		UnionFind<Vertex<V, E>> uf = new UnionFind<>();
-		vertices.forEach((V v, Vertex<V, E> vertex) -> {
-			uf.makeSet(vertex);
-		});
-		while (!heap.isEmpty() && edgeInfos.size() < edgeSize) {
-			Edge<V, E> edge = heap.remove(); 
-			if (uf.isSame(edge.from, edge.to)) continue; 
-			edgeInfos.add(edge.info());
-			uf.union(edge.from, edge.to);
+		//记录最小生成树的边信息的
+		Set<EdgeInfo<V, E>> edgInfos = new HashSet<>();
+		MinHeap<Edge<V,E>> heap = new MinHeap<>(edges,edgeComparator);
+		UnionFind<Vertex<V,E>> unionFind = new UnionFind<>();
+		//		for (Map.Entry<V, Vertex<V, E>> entry : vertices.entrySet())
+//		{
+//			//V key = entry.getKey();
+//			Vertex<V, E> vertex = entry.getValue();
+//
+//			unionFind.makeSet(vertex);
+//		}
+		vertices.forEach((V v,Vertex<V, E> vertex)->{//entry--->value
+			unionFind.makeSet(vertex);
 		}
-		return edgeInfos;
+	);
+		while (!heap.isEmpty()&& edgInfos.size()<verticesSize()-1){
+			Edge<V, E> removed = heap.remove();
+			if (unionFind.isSame(removed.to,removed.from)) continue;
+			edgInfos.add(removed.info());
+			unionFind.union(removed.from,removed.to);
+		}
+
+		return edgInfos;
 	}
 
 //	public Map<V, E> shortestPath(V begin) {

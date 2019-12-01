@@ -61,53 +61,53 @@ public class LinkedList<E> extends AbstractList<E> {
 	@Override
 	public void add(int index, E element) {
 		rangeCheckForAdd(index);
-
-		// size == 0
-		// index == 0
-		if (index == size) { // 往最后面添加元素
-			Node<E> oldLast = last;
-			last = new Node<>(oldLast, element, null);
-			if (oldLast == null) { // 这是链表添加的第一个元素
-				first = last;
-			} else {
-				oldLast.next = last;
+			//尾插
+		if (index == size) {
+			Node<E> prev = last;
+			 Node<E> newLast = new Node(prev, element, null);
+			if (size ==0) {//当前链表为空时，或者说是插入的第一个节点
+				first = newLast;
+				last = newLast;
+			}else {
+				prev.next = newLast;
+				last = newLast;
 			}
-		} else {
-			Node<E> next = node(index); //添加位置相当于就是新添加节点的下一个
-			Node<E> prev = next.prev; //新添加节点的上一个相当于就是添加位置的上一个
-			Node<E> node = new Node<>(prev, element, next);//在构造函数中已经接好了2根线
+
+		}else {
+
+			//普通的插入
+			Node<E> next = node(index);
+			Node<E> prev = next.prev;
+			Node node = new Node(prev, element, next);
 			next.prev = node;
-			
-			if (prev == null) { // index == 0
+
+			if (index == 0) {//头插
 				first = node;
 			} else {
 				prev.next = node;
 			}
 		}
-		
 		size++;
 	}
 
 	@Override
 	public E remove(int index) {
 		rangeCheck(index);
-
 		Node<E> node = node(index);
 		Node<E> prev = node.prev;
 		Node<E> next = node.next;
-		
-		if (prev == null) { // index == 0
+
+		if (index==0) {
 			first = next;
-		} else {
+		}else {
 			prev.next = next;
 		}
-		
-		if (next == null) { // index == size - 1
+		if (next == null) {
 			last = prev;
-		} else {
+		}else {
+
 			next.prev = prev;
 		}
-		
 		size--;
 		return node.element;
 	}

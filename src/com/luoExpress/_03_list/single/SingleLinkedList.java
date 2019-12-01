@@ -52,12 +52,13 @@ public class SingleLinkedList<E> extends AbstractList<E> {
 		 * 平均：O(n)
 		 */
 		rangeCheckForAdd(index);
-		
 		if (index == 0) {
-			first = new Node<>(element, first);//
-		} else {
-				Node<E> prev = node(index - 1);
-				prev.next = new Node<>(element, prev.next);
+			first = new Node(element,first);
+
+		}else {
+			//普通位置的插入
+			Node<E> prev = node(index - 1);
+			prev.next = new Node(element, prev.next);
 		}
 		size++;
 	}
@@ -69,18 +70,22 @@ public class SingleLinkedList<E> extends AbstractList<E> {
 		 * 最坏：O(n)
 		 * 平均：O(n)
 		 */
+		//一般情况，方法中只要有参数，第一步操作都是对参数有效值的判断
 		rangeCheck(index);
-		
-		Node<E> node = first;
+		Node<E> old = first;
 		if (index == 0) {
 			first = first.next;
-		} else {
+
+		}else {
+
 			Node<E> prev = node(index - 1);
-			node = prev.next;
-			prev.next = node.next;
+			old = prev.next;//node(index);
+			prev.next = old.next;
+			size--;
 		}
-		size--;
-		return node.element;
+
+		return old.element;
+
 	}
 
 	@Override
